@@ -3,7 +3,7 @@ import { z } from 'zod';
 
 const envSchema = z.object({
   NODE_ENV: z.enum(['dev', 'production', 'test']).default('dev'),
-  GEMINI_API: z.string(),
+  GEMINI_API_KEY: z.string(),
   PORT: z.coerce.number().default(3333),
   DATABASE_URL: z.string(),
 });
