@@ -6,7 +6,7 @@
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = "postgresql://docker:docker@postgres-database:5432/apishoppertest?schema=public"
 }
 
 generator client {
